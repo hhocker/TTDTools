@@ -1,12 +1,11 @@
 from distutils.core import setup
 import py2exe
-import paramiko
 
-setup(name = "TwilioMMS",
+setup(name = "twilioSMS",
     version = '1.0',
     description = "Send a message through the twilio SMS/MMS API",
     author = "Hal Hockersmith",
-    console = [{'script': 'twilio_mms.py'}],
+    console = [{'script': 'twilioSMS.py'}],
     zipfile = None,
     data_files=[],
     options = {

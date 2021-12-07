@@ -1,0 +1,19 @@
+{
+	"FTP_HOST": "<url or ip of server/host>",
+	"FTP_USER": "<username to login, can be specific to FTP/SFTP uploads>",
+	"FTP_PASS": "<password, ensure the password doesnt have a double quote in it>",
+	"FTP_PATH": "", 
+		{"FTP_PATH-COMMENT":"//if there is a subdirectory the FTP upload must switch into to place the files <url>/pages for example would be '/pages' with forward but not trailing slash"},
+	"FTP_PORT": 22, 
+		{"FTP_PORT-COMMENT":"//port to upload with, may be different if using SFTP"},
+	"FILE_URL": "http://example.com/pages", 
+		{"FTP_URL-COMMENT":"//the public webpage path for the files to be accessed at. Take sthe file name and turns it into a live link to the mp3 file"},
+	"USE_SFTP": true,	
+		{"USE_SFTP-COMMENT":"//set false to use typical unsecuried FTP, set to 'true' for SFTP uploads. at this time FTPS is likely not supported unless the SFTP library will auto swith to it"},
+	"AUDIO_FILES_PATH": "",  
+		{"AUDIO_FILES_PATH-COMMENT":"//Used if the MP3 file was not a full path (eg. 'pagertest-date.mp3' was give vs 'C:\pages\pagertest-todaysdate.mp3'. If just the file name is passed set this to 'C:\pages\' to ensure the file is found"},
+	"POST_UP_COMMANDS": ["<path to tool>/pushNotifier.exe <path to json>/<department>.push.json -u ",
+						 "C:/TTD/tools/twilioSMS.exe C:/TTD/tools/<department>.twilio.json -u "]
+		{"POST_UP_COMMANDS-COMMENT":"//a list of commands to run if the upload was a success. Will be run in sequence. Also has the public URL passed as a parameter at the end automaticly. Use / not \ to make python happy",
+		 "POST_UP_COMMANDS-example":"c:/TTD/twilioSMS.exe c:/TTD/example.json -u http://example.com/pages/pagertest-2021-06-20-18-34-22.mp3 << URL auto appended to above command and run"}
+}

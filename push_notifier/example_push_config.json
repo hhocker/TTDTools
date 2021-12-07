@@ -1,8 +1,0 @@
-{
-	"APP_KEY": "Pushover API KEY for application",
-	"GROUP_KEY": "user or group key, recommend group as it is easier to change",
-	"MESSAGE": "Message in the body of the alert",
-	"TITLE": "simple title similar to an email subject line" ,
-	"SOUND": "siren", //sound that you wish to use
-	"PRIORITY": 1 //priority 0=normal, 1=high (emergency 2 not supported)
-}

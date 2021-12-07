@@ -1,0 +1,21 @@
+{
+  "MESSAGE":"[name of department] paged", 
+	{"MESSAGE-COMMENT":"//Shows up as the start of the message like 'Department paged @ <Timestamp>' "},
+  "TW_SID":"<Subscriber ID>",
+	{"TW_SID-COMMENT":"//Found in the account dashboard "},
+  "TW_TOKEN":"<token>",
+	{"TW_TOKEN-COMMENT":"//the secret token from the account  "},
+  "TW_FROM":"<sending phone number, likely required with new regulations>",
+	{"TW_FROM-COMMENT":"//either a 10DLC, Toll Free, or other number from the Programable Messaging interface "},
+  "AS_MMS":false,
+	{"AS_MMS-COMMENT":"//determines if the URL given is attached to the email or just sent as a link. "},
+  "TIMESTAMP": "<MyDepartment>_%Y_%m_%d_%H_%M_%S.mp3",
+	{"TIMESTAMP-COMMENT":"//The format of the MP3 file to parse the time out so the sent time matches the paged time. "},
+  "RECIPIENTS":[
+		"commma separated list of recipients",
+		"+15553219876",
+		"+15555551234",
+		"for example.",
+		"NOTE: must use +1aaaLLLnnnn style number to make twilio happy"
+   ]
+}

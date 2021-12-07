@@ -1,0 +1,14 @@
+{
+	"APP_KEY": "<pushover application key>",
+	"GROUP_KEY": "<user group, easier than individual user keys, to broadcast to>",
+	"MESSAGE": "[department] paged ",
+		{"MESSAGE-COMMENT":"//Shows up as the start of the message like 'Department paged @ <Timestamp>' "},
+	"TITLE": "[Dept] Page Alert",
+		{"TITLE-COMMENT":"//Shows up as the title of the push in bold "},
+	"SOUND": "siren",
+		{"SOUND-COMMENT":"//Send the message with the given alert tone. Find list on Pushover site "},
+	"PRIORITY": 1,
+		{"PRIORITY-COMMENT":"//Sets the message priority. 1 = high. There is a critical alert but that can be set per user if they choose in the app preferences. Best to leave as high and let them upgrade them as they want. "},
+	"TIMESTAMP": "[Dept]_%Y_%m_%d_%H_%M_%S.mp3"
+		{"TIMESTAMP-COMMENT":"//Date format of the mp3 file to parse out the time. Uses parsed time to set the sent time in the API call"},
+}

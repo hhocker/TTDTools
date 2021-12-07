@@ -1,6 +1,5 @@
 from distutils.core import setup
 import py2exe
-import paramiko
 
 setup(name = "PushNotifier",
     version = '1.0',

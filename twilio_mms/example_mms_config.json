@@ -1,7 +1,0 @@
-{
-  "MESSAGE":"Body of the text message. Url is appened after this message",
-  "TW_SID":"Your SID from TWILIO",
-  "TW_TOKEN":"API Token",   //this uses the TWILIO-Python library. It's documentation should help you configur and get running.
-  "TW_FROM":"+1yournumberhere",
-  "RECIPIENTS":["+1list","+1of","+1recipients"]
-}
