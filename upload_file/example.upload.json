@@ -7,7 +7,7 @@
 	"FTP_PORT": 22, 
 		{"FTP_PORT-COMMENT":"//port to upload with, may be different if using SFTP"},
 	"FILE_URL": "http://example.com/pages", 
-		{"FTP_URL-COMMENT":"//the public webpage path for the files to be accessed at. Take sthe file name and turns it into a live link to the mp3 file"},
+		{"FTP_URL-COMMENT":"//the public webpage path for the files to be accessed at. Takes the file name and turns it into a live link to the mp3 file"},
 	"USE_SFTP": true,	
 		{"USE_SFTP-COMMENT":"//set false to use typical unsecuried FTP, set to 'true' for SFTP uploads. at this time FTPS is likely not supported unless the SFTP library will auto swith to it"},
 	"AUDIO_FILES_PATH": "",  
